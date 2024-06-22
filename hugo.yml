@@ -1,0 +1,94 @@
+title: Flamingo
+theme: typo
+themesDir: themes
+
+
+baseURL: ''
+relativeurls: true
+languageCode: en-us
+paginate: 10
+
+
+security:
+  enableInlineShortcodes: true
+
+
+markup:
+  tableOfContents:
+    endLevel: 3
+    ordered: false
+    startLevel: 2
+  highlight:
+    style: emacs
+    codeFences: true
+    tabWidth: 2
+    anchorLineNos: true
+    guessSyntax: false
+    hl_Lines: ""
+    hl_inline: false
+    lineAnchors: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    noHl: false
+  goldmark:
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xhtml: false
+
+
+params:
+  description: The shiny new Hugo blog
+  theme: auto
+  homeIntroTitle: Hi!
+  homeIntroContent: >
+    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+  homeCollectionTitle: Posts
+  homeCollection: posts
+  paginationSize: 10
+  listSummaries: true
+  listDateFormat: 2 Jan 2006
+  breadcrumbs: true
+  social:
+    - name: linkedin
+      url: https://www.linkedin.com/in/user/
+    - name: medium
+      url: https://medium.com/@user
+    - name: github
+      url: https://github.com/user
+  menu:
+    - name: home
+      url: /
+    - name: posts
+      url: /posts
+    - name: about
+      url: /about
+  giscus:
+    enable: true
+    repo: assayire/flamingo
+    repoid: repoId
+    category: General
+    categoryid: categoryId
+    mapping: pathname
+    theme: preferred_color_scheme
+  style:
+    container_max_width: 768px
+    font_family_base: Garamond, sans-serif
+    font-family-heading: Baskerville, serif
+    font-family-paragraph: Literata, sans-serif
+    font-family-quote: "'Libre Baskerville', serif"
+    font-family-monospace: "Sligoil, 'Monaspace Argon Var', monospace"
+    font_size_base: 18px
+
+
+taxonomies:
+  tag: tags
+  googleAnalytics: G-xxxxxxxxx
+
+
+module:
+  hugoVersion:
+    extended: true
+    min: 0.109.0
