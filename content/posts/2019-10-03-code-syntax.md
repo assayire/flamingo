@@ -21,9 +21,16 @@ TocOpen: true
 This is pre text
 </pre>
 
+### Code block - Plain and Simple
+
+```bash
+mkdir -p /tmp/data
+echo "Hello World"
+```
+
 ### Code block with backticks
 
-```html {hl_lines=[2,8]}
+```html {hl_lines=[8]}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -42,7 +49,7 @@ This is pre text
 
 ### Code block with backticks and language specified
 
-```html
+```html {hl_lines=[6,"10-12"],linenostart=199}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -61,7 +68,7 @@ This is pre text
 
 ### Code block with backticks and language specified with line numbers
 
-```html {linenos=true}
+```html {linenos=inline,hl_lines=["3-6"]}
 <!DOCTYPE html>
 <html lang="en">
   <head>

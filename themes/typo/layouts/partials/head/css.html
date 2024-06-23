@@ -24,3 +24,18 @@ $combined := $CSS
 }}
 
 <link rel="stylesheet" href="{{ $combined.RelPermalink }}" media="all">
+
+<link rel="stylesheet" href="/styles/syntax-base.css" media="all">
+<link rel="stylesheet" href="/styles/syntax.css" media="all">
+
+{{
+$options := dict
+  "targetPath" "css/style.css"
+  "transpiler" "libsass"
+  "vars" site.Params.style
+}}
+
+{{ with resources.Get "scss/main.scss" | toCSS $options }}
+  {{/* warnidf "dbg" "⇢ ⇢ ⇢ ⇢ ⇢ ⇢ ⇢ Initialize Sass variables from Hugo templates" */}}
+  {{/* <link rel="stylesheet" href="{{ .RelPermalink }}" media="all"> */}}
+{{ end }}

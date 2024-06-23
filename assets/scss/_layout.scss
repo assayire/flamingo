@@ -1,0 +1,12 @@
+:root {
+  /* --main-width: $container-max-width; */
+}
+
+.content {
+}
+
+body {
+  border: 1px solid silver !important;
+  max-width: $container-max-width;
+  margin: 0 auto;
+}

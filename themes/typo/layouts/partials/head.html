@@ -21,13 +21,3 @@
 {{ if hugo.IsProduction }}
 {{ template "_internal/google_analytics.html" . }}
 {{ end }}
-
-{{ $options := dict
-    "targetPath" "css/style.css"
-    "transpiler" "libsass"
-    "vars" .Site.Params.style
-}}
-
-{{ with resources.Get "styles/main.scss" | resources.ToCSS $options }}
-  <link rel="stylesheet" href="{{ .RelPermalink }}">
-{{ end }}

@@ -19,24 +19,24 @@ markup:
     ordered: false
     startLevel: 2
   highlight:
-    style: emacs
+    style: dracula
     codeFences: true
     tabWidth: 2
-    anchorLineNos: true
-    guessSyntax: false
-    hl_Lines: ""
-    hl_inline: false
-    lineAnchors: ""
-    lineNoStart: 1
-    lineNos: false
-    lineNumbersInTable: true
-    noClasses: true
+    # anchorLineNos: false
+    # lineAnchors: ""
+    # guessSyntax: false
+    # hl_Lines: ""
+    # hl_inline: false
+    # lineNoStart: 1
+    # lineNos: false
+    lineNumbersInTable: false
+    noClasses: false
     noHl: false
   goldmark:
     renderer:
       hardWraps: false
       unsafe: true
-      xhtml: false
+      xhtml: true
 
 
 params:
@@ -76,10 +76,10 @@ params:
   style:
     container_max_width: 768px
     font_family_base: Garamond, sans-serif
-    font-family-heading: Baskerville, serif
-    font-family-paragraph: Literata, sans-serif
-    font-family-quote: "'Libre Baskerville', serif"
-    font-family-monospace: "Sligoil, 'Monaspace Argon Var', monospace"
+    font_family_heading: Baskerville, serif
+    font_family_paragraph: Special Elite, sans-serif
+    font_family_quote: "'Libre Baskerville', serif"
+    font_family_monospace: "Sligoil, 'Monaspace Argon Var', monospace"
     font_size_base: 18px
 
 
